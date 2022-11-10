@@ -1,0 +1,120 @@
+.p1 {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 22px;
+    text-align: justify;
+    width: 1100px;
+}
+.p2 {
+    font-family: Verdana, Tahoma, sans-serif, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans",sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url(images/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 120px;
+    border-bottom: 1px solid rgb(204, 199, 199);
+    height: 80px;
+}
+.logo{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+    padding-left: 30px;
+}
+.menu li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 17px;
+    transition: color .3s ease;
+}
+.menu li a:hover{
+    color: rgb(240, 85, 85);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    text-transform: none;
+    width: auto;
+    height: 300px;
+}
+.content h3{
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+.content h1{
+    font-size: 4.4em;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: .5em;
+}
+.content .btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 1.1em;
+    border: 2px solid #333;
+    text-transform: uppercase;
+    transition: opacity .3s ease;
+}
+.content .btn:hover{
+    opacity: 0.5;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}

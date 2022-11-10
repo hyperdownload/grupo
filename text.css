@@ -1,0 +1,15 @@
+.text-box{
+    animation: slide-up 3s;
+}
+@keyframes slide-up {
+    from{
+        opacity: 0.2;
+        line-height: 500px;
+        width: auto;
+    }
+    to{
+        opacity: 1;
+        line-height: 22px;
+        width: auto;
+    }
+}
